@@ -1,0 +1,178 @@
+body {
+    background: linear-gradient(to bottom, #f9f9f9, #e9e9e9);
+  }
+
+/* Resume Section Styles */
+.timeline {
+    list-style: none;
+    padding: 0;
+    position: relative;
+  }
+
+  .timeline:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #ccc;
+    left: 50%;
+    margin-left: -1px;
+  }
+
+  .timeline li {
+    margin-bottom: 50px;
+    position: relative;
+  }
+
+  .timeline li:before,
+  .timeline li:after {
+    content: '';
+    display: table;
+  }
+
+  .timeline li:after {
+    clear: both;
+  }
+
+  .timeline h6 {
+    margin-top: 0;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .timeline p {
+    margin-bottom: 0;
+  }
+
+  .timeline .timeline-content {
+    width: 45%;
+    float: left;
+    padding: 10px 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .timeline .timeline-content:before {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 15px 15px 15px 0;
+    border-color: transparent #f9f9f9 transparent transparent;
+    top: 16px;
+    left: -15px;
+  }
+
+  .timeline .timeline-content:after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 14px 14px 14px 0;
+    border-color: transparent #fff transparent transparent;
+    top: 17px;
+    left: -14px;
+  }
+
+  .timeline .timeline-content.right {
+    float: right;
+    text-align: right;
+  }
+
+  .timeline .timeline-content.right:before {
+    left: auto;
+    right: -15px;
+    border-color: transparent transparent transparent #f9f9f9;
+  }
+
+  .timeline .timeline-content.right:after {
+    left: auto;
+    right: -14px;
+    border-color: transparent transparent transparent #fff;
+  }
+
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .timeline li .timeline-content {
+      width: 100%;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .timeline li .timeline-content:before,
+    .timeline li .timeline-content:after {
+      top: -30px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .timeline li .timeline-content.right:before,
+    .timeline li .timeline-content.right:after {
+      top: -30px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  .right{
+    text-align: left;
+  }
+
+  /* Carousel Styles */
+  .carousel {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+  }
+
+  .carousel-inner {
+    display: flex;
+    transition: transform 0.5s;
+  }
+
+  .carousel-item {
+    flex: 0 0 100%;
+    margin-right: 10px;
+    width: 100%;
+  }
+
+  /* Optional: Adjust the carousel item height */
+  .carousel-item img {
+    height: 200px;
+    object-fit: cover;
+  }
+
+  /* Navigation Arrows */
+  .carousel-nav {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    width: 30px;
+  }
+
+  .carousel-nav .arrow {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+  }
+
+  .carousel-nav .arrow:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .carousel-nav .arrow.right {
+    left: auto;
+    right: 10px;
+  }
