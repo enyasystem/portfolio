@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Full Stack Developer Portfolio</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha384-Lr6fIZG5NJoCZrDTws8Lr74fs9A/3VwB20rhHzD3clquMgGpi9f+Pi+uQh0G0LC4" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
   <style>
     /* Custom styles */
     body {
@@ -26,11 +27,34 @@
     background-color: seagreen/* Replace with your desired color */
   }
 
+
+  .social-icons {
+    margin-bottom: 20px;
+  }
+  
+  .social-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+  background-color: #ffffff;
+    border-radius: 50%;
+    margin-right: 10px;
+    color: #000000;
+    line-height: 40px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    background-color: #000000;
+    color: #ffffff;
+  }
+  
   </style>
 </head>
 <body>
 
- <nav class="navbar navbar-expand-lg navbar-light bg-dark sticky-top">
+ <nav class="navbar navbar-expand-lg navbar-light bg-primary sticky-top">
     <div class="container">
       <a class="navbar-brand" href="#">Portfolio</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -317,44 +341,19 @@
     </div>
   </section>
 
-  <footer class="footer bg-dark text-light">
+  <footer class="bg-dark text-light py-4">
     <div class="container text-center">
-      <div class="row">
-        <div class="col-lg-12">
-          <h3>Contact Information</h3>
-          <p><i class="fas fa-envelope"></i> Email: john.doe@example.com</p>
-          <p><i class="fas fa-phone"></i> Phone: (123) 456-7890</p>
-          <p><i class="fas fa-map-marker-alt"></i> Address: 123 Main St, City, Country</p>
-        </div>
+      <div class="social-icons">
+        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
       </div>
-      <div class="row">
-        <div class="col-lg-12">
-          <ul class="list-inline social-icons">
-            <li class="list-inline-item">
-              <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-12">
-          <p>&copy; 2023 Your Name. All rights reserved.</p>
-        </div>
-      </div>
+      <p>&copy; 2023 Enya Elvis. All rights reserved.</p>
     </div>
   </footer>
+  
+  
   
   
 
