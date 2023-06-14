@@ -4,15 +4,7 @@ document.querySelector('form').addEventListener('submit', function(event) {
     alert('Form submitted successfully!');
   });
 
-  document.querySelectorAll('a.nav-link').forEach(function(link) {
-    link.addEventListener('click', function(event) {
-      event.preventDefault();
-      const target = document.querySelector(link.getAttribute('href'));
-      target.scrollIntoView({
-        behavior: 'smooth'
-      });
-    });
-  });
+
 
 
   document.querySelector('.navbar-toggler').addEventListener('click', function() {
