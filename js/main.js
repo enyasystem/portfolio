@@ -36,3 +36,25 @@ document.querySelector('form').addEventListener('submit', function(event) {
       this.style.color = '#000000';
     });
   });
+
+
+  // Get the button element
+  const goUpButton = document.getElementById('goUpButton');
+
+  // Show/hide the button based on scroll position
+  window.addEventListener('scroll', () => {
+    if (window.pageYOffset > 300) {
+      goUpButton.classList.add('show');
+    } else {
+      goUpButton.classList.remove('show');
+    }
+  });
+
+  // Scroll to the top when the button is clicked
+  goUpButton.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+

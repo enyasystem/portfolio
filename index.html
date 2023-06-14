@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,50 +11,64 @@
   <style>
     /* Custom styles */
     body {
-      background-color: #eaf4ff; /* Pale blue background color */
+      background-color:  #9dc3ec;
+      /* Pale blue background color */
     }
-   
+
     /* Add more custom styles here */
-	.profile_pic{
-	width: 200px;
-	height: 200px;
-	border-radius: 50%;
-}
+    .profile_pic {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+    }
 
- .progress-bar {
-    height: 100%;
-    width: 0;
-    background-color: seagreen/* Replace with your desired color */
-  }
+    .progress-bar {
+      height: 100%;
+      width: 0;
+      background-color: seagreen
+        /* Replace with your desired color */
+    }
 
 
-  .social-icons {
-    margin-bottom: 20px;
-  }
-  
-  .social-icon {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-  background-color: #ffffff;
-    border-radius: 50%;
-    margin-right: 10px;
-    color: #000000;
-    line-height: 40px;
-    text-align: center;
-    transition: background-color 0.3s ease;
-  }
-  
-  .social-icon:hover {
-    background-color: #000000;
-    color: #ffffff;
-  }
-  
+    .social-icons {
+      margin-bottom: 20px;
+    }
+
+    .social-icon {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      background-color: #ffffff;
+      border-radius: 50%;
+      margin-right: 10px;
+      color: #000000;
+      line-height: 40px;
+      text-align: center;
+      transition: background-color 0.3s ease;
+    }
+
+    .social-icon:hover {
+      background-color: #000000;
+      color: #ffffff;
+    }
+
+    .go-up-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: none;
+      z-index: 9999;
+    }
+
+    .go-up-button.show {
+      display: block;
+    }
   </style>
 </head>
+
 <body>
 
- <nav class="navbar navbar-expand-lg navbar-light bg-primary sticky-top">
+  <nav class="navbar navbar-expand-lg navbar-light bg-primary sticky-top">
     <div class="container">
       <a class="navbar-brand" href="#">Portfolio</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -87,7 +102,9 @@
       <div class="col-lg-6">
         <h1>Enya Elvis</h1>
         <h3>Full Stack Web Developer</h3>
-        <p>Experienced full stack developer with a passion for creating efficient and user-friendly web applications. Skilled in HTML, CSS, JavaScript, and various frameworks. Strong problem-solving abilities and a detail-oriented mindset.</p>
+        <p>Experienced full stack developer with a passion for creating efficient and user-friendly web applications.
+          Skilled in HTML, CSS, JavaScript, and various frameworks. Strong problem-solving abilities and a
+          detail-oriented mindset.</p>
       </div>
     </div>
   </header>
@@ -110,97 +127,95 @@
             </li>
           </ul>
         </div>
-      <div class="resume-item">
-  <h3>Skills</h3>
-  <div class="vertical-line"></div>
- 
-</div>
+        <div class="resume-item">
+          <h3>Skills</h3>
+          <div class="vertical-line"></div>
 
-<div class="container">
-    <div class="resume-item">
-      <h3>Skills</h3>
-      <div class="vertical-line"></div>
-      <ul class="list-group">
-        <li class="list-group-item">
-          <span>HTML5</span>
-          <div class="progress">
-            <div class="progress-bar bg-danger" style="width: 99%;" role="progressbar" aria-valuenow="90"
-              aria-valuemin="0" aria-valuemax="100">95%</div>
+        </div>
+
+        <div class="container">
+          <div class="resume-item">
+            <h3>Skills</h3>
+            <div class="vertical-line"></div>
+            <ul class="list-group">
+              <li class="list-group-item">
+                <span>HTML5</span>
+                <div class="progress">
+                  <div class="progress-bar bg-danger" style="width: 99%;" role="progressbar" aria-valuenow="90"
+                    aria-valuemin="0" aria-valuemax="100">95%</div>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <span>CSS3</span>
+                <div class="progress">
+                  <div class="progress-bar bg-primary" style="width: 95%;" role="progressbar" aria-valuenow="85"
+                    aria-valuemin="0" aria-valuemax="100">95%</div>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <span>Bootstrap</span>
+                <div class="progress">
+                  <div class="progress-bar bg-info" style="width: 90%;" role="progressbar" aria-valuenow="90"
+                    aria-valuemin="0" aria-valuemax="100">95%</div>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <span>JavaScript</span>
+                <div class="progress">
+                  <div class="progress-bar bg-warning" style="width: 70%;" role="progressbar" aria-valuenow="95"
+                    aria-valuemin="0" aria-valuemax="100">95%</div>
+                </div>
+              </li>
+
+
+              <li class="list-group-item">
+                <span>PHP</span>
+                <div class="progress">
+                  <div class="progress-bar bg-dark" style="width: 70%;" role="progressbar" aria-valuenow="80"
+                    aria-valuemin="0" aria-valuemax="100">80%</div>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <span>SQL</span>
+                <div class="progress">
+                  <div class="progress-bar bg-danger" style="width: 85%;" role="progressbar" aria-valuenow="85"
+                    aria-valuemin="0" aria-valuemax="100">85%</div>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <span>Git</span>
+                <div class="progress">
+                  <div class="progress-bar bg-success" style="width: 90%;" role="progressbar" aria-valuenow="90"
+                    aria-valuemin="0" aria-valuemax="100">90%</div>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <span>Wordpress</span>
+                <div class="progress">
+                  <div class="progress-bar bg-dark" style="width: 85%;" role="progressbar" aria-valuenow="85"
+                    aria-valuemin="0" aria-valuemax="100">85%</div>
+                </div>
+              </li>
+            </ul>
           </div>
-        </li>
-        <li class="list-group-item">
-          <span>CSS3</span>
-          <div class="progress">
-            <div class="progress-bar bg-primary" style="width: 95%;" role="progressbar" aria-valuenow="85"
-              aria-valuemin="0" aria-valuemax="100">95%</div>
-          </div>
-        </li>
-        <li class="list-group-item">
-          <span>Bootstrap</span>
-          <div class="progress">
-            <div class="progress-bar bg-info" style="width: 90%;" role="progressbar" aria-valuenow="90"
-              aria-valuemin="0" aria-valuemax="100">95%</div>
-          </div>
-        </li>
-        <li class="list-group-item">
-          <span>JavaScript</span>
-          <div class="progress">
-            <div class="progress-bar bg-warning" style="width: 70%;" role="progressbar" aria-valuenow="95"
-              aria-valuemin="0" aria-valuemax="100">95%</div>
-          </div>
-        </li>
-        
-        
-        <li class="list-group-item">
-          <span>PHP</span>
-          <div class="progress">
-            <div class="progress-bar bg-dark" style="width: 70%;" role="progressbar" aria-valuenow="80"
-              aria-valuemin="0" aria-valuemax="100">80%</div>
-          </div>
-        </li>
-        <li class="list-group-item">
-          <span>SQL</span>
-          <div class="progress">
-            <div class="progress-bar bg-danger" style="width: 85%;" role="progressbar" aria-valuenow="85"
-              aria-valuemin="0" aria-valuemax="100">85%</div>
-          </div>
-        </li>
-        <li class="list-group-item">
-          <span>Git</span>
-          <div class="progress">
-            <div class="progress-bar bg-success" style="width: 90%;" role="progressbar" aria-valuenow="90"
-              aria-valuemin="0" aria-valuemax="100">90%</div>
-          </div>
-        </li>
-        <li class="list-group-item">
-          <span>Wordpress</span>
-          <div class="progress">
-            <div class="progress-bar bg-dark" style="width: 85%;" role="progressbar" aria-valuenow="85"
-              aria-valuemin="0" aria-valuemax="100">85%</div>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </div>
-<br>
+        </div>
+        <br>
 
         <div class="resume-item">
           <h3>Languages</h3>
           <div class="vertical-line"></div>
           <ul>
             <li>English (Fluent)</li>
-            <li>Spanish (Intermediate)</li>
-            <li>French (Basic)</li>
           </ul>
         </div>
 
- <div class="resume-item">
+        <div class="resume-item">
           <h3>Hobies</h3>
           <div class="vertical-line"></div>
           <ul>
             <li>Writing Codes</li>
-            <li>Reading<li>
-	<li>Swimming<li>
+            <li>Reading
+            <li>Swimming
             <li>Gaming</li>
           </ul>
         </div>
@@ -268,7 +283,7 @@
     </div>
   </section>
 
-  <section id="projects" class="container">
+  <!-- <section id="projects" class="container">
     <h2>Projects</h2>
     <div id="project-carousel" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
@@ -302,7 +317,7 @@
           </div>
         </div>
       </div>
-  
+
       <a class="carousel-control-prev" href="#project-carousel" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
@@ -312,8 +327,74 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
+  </section> -->
+
+  <section id="projects" class="container-fluid">
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="portfolio-item">
+          <img src="project1.jpg" alt="Project 1" class="img-fluid">
+          <div class="caption">
+            <h3>E-commerce Website</h3>
+            <p>A full-stack e-commerce website built with React, Node.js, and MongoDB.</p>
+            <a href="#" class="btn btn-primary">View Details</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="portfolio-item">
+          <img src="project2.jpg" alt="Project 2" class="img-fluid">
+          <div class="caption">
+            <h3>Social Media App</h3>
+            <p>A social media application developed using React, Redux, and Firebase.</p>
+            <a href="#" class="btn btn-primary">View Details</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="portfolio-item">
+          <img src="project3.jpg" alt="Project 3" class="img-fluid">
+          <div class="caption">
+            <h3>Task Management System</h3>
+            <p>A web-based task management system built with React, Node.js, and PostgreSQL.</p>
+            <a href="#" class="btn btn-primary">View Details</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="portfolio-item">
+          <img src="project4.jpg" alt="Project 4" class="img-fluid">
+          <div class="caption">
+            <h3>Weather App</h3>
+            <p>A weather application developed using React, Express.js, and OpenWeather API.</p>
+            <a href="#" class="btn btn-primary">View Details</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="portfolio-item">
+          <img src="project5.jpg" alt="Project 5" class="img-fluid">
+          <div class="caption">
+            <h3>Job Board</h3>
+            <p>A job board website built with React, Node.js, and MongoDB.</p>
+            <a href="#" class="btn btn-primary">View Details</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="portfolio-item">
+          <img src="project6.jpg" alt="Project 6" class="img-fluid">
+          <div class="caption">
+            <h3>Blog Application</h3>
+            <p>A blogging platform developed using React, Redux, and Firebase.</p>
+            <a href="#" class="btn btn-primary">View Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
-  
+
+
 
   <section id="contact" class="container py-5">
     <h2>Contact</h2>
@@ -355,22 +436,25 @@
       <p>&copy; 2023 Enya Elvis. All rights reserved.</p>
     </div>
   </footer>
-  
-  
-  
-  
+
+
+
+
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
   <script>
-    $(document).ready(function() {
+    $(document).ready(function () {
       // Activate the project carousel
       $('#project-carousel').carousel();
     });
   </script>
 
-<script src="js/main.js"></script>
+  <script src="js/main.js"></script>
+  <button id="goUpButton" class="btn btn-primary go-up-button" title="Go Up"><i class="fas fa-arrow-up"></i></button>
+
 </body>
+
 </html>
